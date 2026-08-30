@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fixed-nav{
+    width: 100%;
+    height: 8vh;
+    background: linear-gradient(to right,#5C32BF,#6C2DAA,#92227B,#B01956,#DE0C1E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.fixed-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/* ====================
+    Header part starts
+   ===================== */
+
+header{
+    margin-top: 8vh;
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(to right,rgb(0,0,0,0.70),rgb(0,0,0,0.70)),url("https://singh-cp.github.io/netflix-landingpage/images/netflix-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dropdown button:first-child{
+    width: 120px;
+    background: transparent  !important;
+    border: 2px solid white;
+    color: white;
+    margin-right: 10px;
+}
+.dropdown button:last-child{
+    height: 5vh;
+    width: 120px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.top-matter{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+.netflix-img img{
+    height: 6vh;
+}
+.down-matter{
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+}
+.down-matter h1{
+    font-size: 55px;
+}
+.down-matter h1:nth-child(2){
+    margin-bottom: 20px;
+}
+.down-matter h5:nth-child(3){
+    margin-bottom: 35px;
+}
+.down-matter-buttons input{
+    width: 28vw;
+    height: 9vh;
+    margin-right: 20px;
+    background: transparent;
+    border: 2px solid grey;
+    border-radius: 5px;
+
+}
+.down-matter-buttons input::placeholder{
+    color: rgb(163, 155, 155);
+    font-size: 20px;
+    padding-left: 10px;
+}
+.down-matter-buttons a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.down-matter-buttons{
+    display: flex;
+    justify-content: center;
+}
+.down-matter-buttons div:nth-child(2){
+    /* border: 2px solid; */
+    width:22vw ;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.down-matter p:last-child{
+    margin-top: 15px;
+}
+/* =======================
+   Header part ends
+   ======================= */
+
+
+
+
+/* ================
+   Main Part starts
+   ================= */
+.main{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 70vh;
+
+}
+.curve{
+    width: 100%;
+    height:100px;
+    border-top: 4px solid red;
+    border-radius: 100% 100% 0% 0%;
+    box-shadow:0 0 20px black inset;
+    background: radial-gradient(circle at center,#0f1131 0%,#090909 70%);
+}
+.main h5{
+    margin-left: 160px;
+    font-size: 30px;
+}
+.movie-imgs{
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    padding-left: 25px;
+    /* border: 2px solid red; */
+    display:flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+     /* margin-bottom: 40px; */
+
+}
+.movie-imgs div{
+    transition: transform 0.3s ease;
+    transform: scale(1);
+    /* overflow: hidden; */
+    flex-shrink: 0;
+}
+.movie-imgs img{
+    height: 40vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.movie-imgs div:hover{
+    transform: scale(1.08);
+    border-radius: 10px;
+}
+.movie-imgs::-webkit-scrollbar{
+    display: none;
+}
+.movie-imgs{
+    scrollbar-width: none; /* Firefox */
+}
+.movie-card{
+    position: relative;
+    flex: 0 0 auto;
+}
+.rank{
+    position: absolute;
+    left: -28px;
+    bottom: -2px;
+    font-size: 95px;
+    font-weight: 900;
+    color: black;
+    z-index: 1;
+    -webkit-text-stroke: 2px white;
+}
+.movie-card img{
+    z-index: 2;
+}
+/* ====================
+   Main Part Ends
+   ==================== */
+
+/* =====================
+    Reasons Part starts
+    ===================== */
+
+.reasons{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    color: white;
+}
+.reasons h5{
+    margin-left: 120px;
+    font-size: 30px;
+}
+.join-reason{
+    width: 80vw;
+    height: 60vh;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 30px;
+}
+.reason1{
+    position: relative;
+    width: 30%;
+    height: 50vh;
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    background: linear-gradient(#1A2043,#1A1F40,#1D1B35,#1D182F,#20111E);
+}
+.reason1 h5{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.reason1 p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.reason1 img{
+    position: absolute;
+    height: 10vh;
+    top: 250px;
+    left: 150px;
+}
+
+/* =====================
+    Reason part ends
+    ===================== */
+
+
+/* ========================
+    question part starts
+    ======================== */
+.questions{
+    background-color: black;
+    width: 100%;
+    /* height: 80vh; */
+    min-height: 80vh; 
+    height: auto; 
+    color: white;
+    padding-bottom: 30px;
+}
+.questions h5{
+    margin-left: 150px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.accordion{
+    margin: auto;
+    width: 70vw;
+    /* height: 60vh;  */
+    height: auto;
+}
+ .accordion-item{
+    background-color: #2d2d2d !important;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.accordion-button{
+    background-color: #2d2d2d !important;
+    color: white !important;
+    font-size: 24px;
+}
+
+/* .accordion-button:not(.collapsed){
+    background-color: #2d2d2d !important;
+    color: white !important;
+} */
+
+.accordion-body{
+    background-color: #2d2d2d;
+    color: white;
+}
+
+/* ======================
+    Question part ends 
+    =====================*/
+
+/* ======================
+    footer part starts
+    ===================== */
+
+.footer{
+    background-color: black;
+    width: 100%;
+    color:white;
+    padding-top: 20px;
+    margin: 0;
+    height: auto;
+    /* display: block; */
+}
+.para1{
+    margin-left:400px;
+    margin-top:0;
+    padding-top:20px;
+}
+.para2{
+    margin:40px 100px
+}
+.para3,.para4{
+    margin:50px 100px
+}
+.footer-matter{
+    width:80vw;
+    margin:30px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:30px;
+    height:auto;
+}
+/*
+.footer-matter{
+    margin:10px auto;
+    width:80vw;
+    height: 30vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}*/
+.fmatter p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.dropdown1 button{
+    width: 120px;
+    background: transparent  !important;
+    border: 2px solid whitesmoke;
+    color: white;
+    margin-right: 10px;
+    margin-left: 120px;
+}
+.para5{
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+/* =========================
+    footer part ends
+    ======================== */
+
+
+
